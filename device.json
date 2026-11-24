@@ -102,19 +102,9 @@
   "verified_by_press": true,
   "verified_how": "one evdev log of presses in a stated order; joydev_index from JSIOCGBTNMAP; browser indexes not read from a browser",
   "recorder_jobs": {
-    "Y (left)": "record",
-    "A (right)": "save",
+    "Y (left)": "record / stop",
+    "A (right)": "save and next",
     "X (top)": "retake",
-    "B (bottom)": "skip",
-    "L": "last",
-    "R": "pause",
-    "L2": "skip2",
-    "R2": "stop",
-    "minus": "layouts",
-    "plus": "auto",
-    "dpad_up": "perCardUp",
-    "dpad_down": "perCardDown",
-    "dpad_left": "discard",
-    "dpad_right": "silence"
+    "B (bottom)": "skip (Skip all by default)"
   }
 }

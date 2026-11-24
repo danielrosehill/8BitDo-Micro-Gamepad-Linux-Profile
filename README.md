@@ -9,13 +9,15 @@ Each mode is a different device: D `2dc8:9020` (gamepad, this file), K `2dc8:902
 | A (right) | `BTN_A/SOUTH` 304 | 0 | 0 | `save` |
 | X (top) | `BTN_X/NORTH` 307 | 3 | 2 | `retake` |
 | B (bottom) | `BTN_B/EAST` 305 | 1 | 1 | `skip` |
-| L | `BTN_TL` 310 | 6 | 4 | `last` |
-| R | `BTN_TR` 311 | 7 | 5 | `pause` |
-| L2 | `BTN_TL2` 312 | 8 | 6 | `skip2` |
-| R2 | `BTN_TR2` 313 | 9 | 7 | `stop` |
-| minus | `BTN_SELECT` 314 | 10 | 8 | `layouts` |
-| plus | `BTN_START` 315 | 11 | 9 | `auto` |
-| D-pad | left stick: `ABS_X` / `ABS_Y`, 0 / 127 / 255 | axes 0, 1 | 12 to 15 | +1 / -1 sentence, discard, silence |
+| L | `BTN_TL` 310 | 6 | 4 | unassigned |
+| R | `BTN_TR` 311 | 7 | 5 | unassigned |
+| L2 | `BTN_TL2` 312 | 8 | 6 | unassigned |
+| R2 | `BTN_TR2` 313 | 9 | 7 | unassigned |
+| minus | `BTN_SELECT` 314 | 10 | 8 | unassigned |
+| plus | `BTN_START` 315 | 11 | 9 | unassigned |
+| D-pad | left stick: `ABS_X` / `ABS_Y`, 0 / 127 / 255 | axes 0, 1 | 12 to 15 | unassigned |
+
+Shortcuts in the recorder app (release 634, only these four): **Y** record / stop, **A** save and next, **X** retake, **B** skip all. Same positions as the Logitech F310.
 
 L2 and R2 also send `ABS_BRAKE` / `ABS_GAS`. Home and star were not pressed. Labels are Nintendo's: A right, B bottom, X top, Y left.
 Electron 38 (Chromium 140) has no mapping entry for this id (binary search of its table), so a page should get the raw order; this was not read from inside a browser.
