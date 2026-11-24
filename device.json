@@ -1,0 +1,120 @@
+{
+  "captured": "2026-11-24",
+  "product": "8BitDo Micro gamepad",
+  "mode": "D (DirectInput / Android), Bluetooth",
+  "bluetooth": {
+    "vendor": "2dc8",
+    "product": "9020",
+    "version": "0100"
+  },
+  "usb": {
+    "vendor": "2dc8",
+    "product": "9020",
+    "note": "reported over Bluetooth (modalias usb:v2DC8p9020d0100); the wired id was not checked"
+  },
+  "other_modes": {
+    "K": {
+      "product": "9021",
+      "presents": "keyboard",
+      "verified": "one key seen (KEY_K 37), button unknown"
+    },
+    "S": "not checked"
+  },
+  "driver": "hid-generic",
+  "buttons": {
+    "Y (left)": {
+      "evdev": "BTN_Y/WEST",
+      "code": 308,
+      "joydev_index": 4,
+      "standard_index_predicted": 3
+    },
+    "A (right)": {
+      "evdev": "BTN_A/SOUTH",
+      "code": 304,
+      "joydev_index": 0,
+      "standard_index_predicted": 0
+    },
+    "X (top)": {
+      "evdev": "BTN_X/NORTH",
+      "code": 307,
+      "joydev_index": 3,
+      "standard_index_predicted": 2
+    },
+    "B (bottom)": {
+      "evdev": "BTN_B/EAST",
+      "code": 305,
+      "joydev_index": 1,
+      "standard_index_predicted": 1
+    },
+    "L": {
+      "evdev": "BTN_TL",
+      "code": 310,
+      "joydev_index": 6,
+      "standard_index_predicted": 4
+    },
+    "R": {
+      "evdev": "BTN_TR",
+      "code": 311,
+      "joydev_index": 7,
+      "standard_index_predicted": 5
+    },
+    "L2": {
+      "evdev": "BTN_TL2",
+      "code": 312,
+      "joydev_index": 8,
+      "standard_index_predicted": 6
+    },
+    "R2": {
+      "evdev": "BTN_TR2",
+      "code": 313,
+      "joydev_index": 9,
+      "standard_index_predicted": 7
+    },
+    "minus": {
+      "evdev": "BTN_SELECT",
+      "code": 314,
+      "joydev_index": 10,
+      "standard_index_predicted": 8
+    },
+    "plus": {
+      "evdev": "BTN_START",
+      "code": 315,
+      "joydev_index": 11,
+      "standard_index_predicted": 9
+    }
+  },
+  "dpad": {
+    "reports_as": "left stick",
+    "up": "ABS_Y 0",
+    "down": "ABS_Y 255",
+    "left": "ABS_X 0",
+    "right": "ABS_X 255",
+    "centre": 127
+  },
+  "triggers_also": {
+    "L2": "ABS_BRAKE (10) 0/255",
+    "R2": "ABS_GAS (9) 0/255"
+  },
+  "not_pressed": [
+    "home",
+    "star"
+  ],
+  "verified_by_press": true,
+  "verified_how": "one evdev log of presses in a stated order; joydev_index from JSIOCGBTNMAP; browser indexes not read from a browser",
+  "recorder_jobs": {
+    "Y (left)": "record",
+    "A (right)": "save",
+    "X (top)": "retake",
+    "B (bottom)": "skip",
+    "L": "last",
+    "R": "pause",
+    "L2": "skip2",
+    "R2": "stop",
+    "minus": "layouts",
+    "plus": "auto",
+    "dpad_up": "perCardUp",
+    "dpad_down": "perCardDown",
+    "dpad_left": "discard",
+    "dpad_right": "silence"
+  }
+}
